@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MiliGordillo/Spring4-Trabajo-Practico-N-1/issues"
   },
-  "homepage": "https://github.com/MiliGordillo/Spring4-Trabajo-Practico-N-1#readme"
+  "homepage": "https://github.com/MiliGordillo/Spring4-Trabajo-Practico-N-1#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
