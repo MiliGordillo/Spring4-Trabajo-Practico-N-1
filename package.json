@@ -24,6 +24,7 @@
   "homepage": "https://github.com/MiliGordillo/Spring4-Trabajo-Practico-N-1#readme",
   "dependencies": {
     "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
     "method-override": "^3.0.0"
   }
 }
