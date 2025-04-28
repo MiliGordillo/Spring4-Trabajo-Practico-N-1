@@ -531,13 +531,19 @@ main {
   }
 }
 
-/* ==== Responsive ==== */
+/* ==== Responsive General ==== */
+
+/* Tablets grandes (≤ 992px) */
 @media (max-width: 992px) {
   .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  .heroes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
+/* Tablets pequeñas (≤ 768px) */
 @media (max-width: 768px) {
   nav.navbar ul {
     gap: 1rem;
@@ -547,25 +553,39 @@ main {
   }
   .hero-content p,
   section p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   section h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  .heroes-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
   }
 }
 
+/* Celulares (≤ 600px) */
 @media (max-width: 600px) {
   .form-container {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
   .hero-actions {
     flex-direction: column;
+    gap: 0.8rem;
   }
-  .edit-btn, .delete-btn {
+  .edit-btn,
+  .delete-btn {
     width: 100%;
+  }
+  .heroes-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-card {
+    margin-bottom: 1.5rem;
   }
 }
 
+/* Celulares chicos (≤ 576px) */
 @media (max-width: 576px) {
   nav.navbar {
     padding: 1rem;
@@ -577,5 +597,9 @@ main {
     padding: 0.8rem 1.8rem;
     font-size: 1rem;
   }
+  .dashboard h1 {
+    font-size: 1.8rem;
+  }
 }
+
 
