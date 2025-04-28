@@ -249,7 +249,7 @@ section p {
 
 /* ==== Footer==== */
 footer {
-  background: var(--dark);
+  background: var(--gradient-bg);
   color: white;
   padding: 3rem 0;
   text-align: center;
