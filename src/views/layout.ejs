@@ -6,8 +6,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/img/logo.png" type="image/png">
 </head>
-<body class="<%= typeof fondoIndex !== 'undefined' && fondoIndex ? 'fondo-index' : '' %>">
-
+<body>
   <% if (typeof mostrarNavbar === 'undefined' || mostrarNavbar) { %>
     <%- include('partials/navbar') %>
   <% } %>
