@@ -35,10 +35,6 @@ router.delete('/api/nombre/:nombre', eliminarSuperheroePorNombreController);
 
 
 // Ruta de inicio — esta es la que se activa cuando apretás el botón "Inicio"
-router.get('/', (req, res) => {
-  res.render('index', { title: 'Inicio' }); // 👈 Acá pasás el title
-});
-
 router.get('/api', async (req, res) => {
   try {
     const rawSuperheroes = await obtenerTodosLosSuperheroes();
@@ -77,6 +73,17 @@ router.post('/formulario/editar/:id', editarSuperheroeController);
 
 // Eliminar superhéroe
 router.delete('/:id', eliminarSuperheroeYRedirigirController);
+
+router.get('/contacto', (req, res) => {
+  res.render('contacto', { title: 'Contacto' });
+});
+
+router.post('/contacto', (req, res) => {
+  const { nombre, email, mensaje } = req.body;
+  console.log('Mensaje recibido en el servidor:', { nombre, email, mensaje });
+  res.status(200).json({ success: true });
+});
+
 
 export default router;
 

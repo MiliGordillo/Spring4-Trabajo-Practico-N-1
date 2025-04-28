@@ -1,14 +1,50 @@
-<%- include('partials/header') %>
+<%- include('partials/navbar') %>
 
-<div class="container mt-5 text-center">
-  <h1 class="mb-4">🦸‍♂️ Bienvenido al Universo de Superhéroes</h1>
-  <p class="lead">Gestioná, editá y descubrí todo sobre tus héroes favoritos.</p>
-<!-- 
-  <img src="/src/public/img/fondo.jpg" alt="Superhéroes" class="img-fluid my-4" style="max-height: 400px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.3);"> -->
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <h1>Bienvenido al Universo de Superhéroes</h1>
+    <p>Gestioná, editá y descubrí todo sobre tus héroes favoritos.</p>
+    <a href="#heroes" class="btn-primary">Conocenos</a>
+  </div>
+</section>
 
-  <a href="/heroes/api" class="btn btn-primary btn-lg mt-3">Ver Superhéroes</a>
-</div>
+<section id="heroes" class="py-5 text-center" style="background-color: #f4f6f8;">
+  <div class="container">
+    <h2>Héroes Destacados</h2>
+    <p>¡Nuestros héroes más épicos!</p>
+    <div class="btn-container">
+      <a href="/heroes/api" class="btn-primary">Ver Todos los Superhéroes</a>
+    </div>
+    
+  </div>
+</section>
 
-<%- include('partials/footer') %>
+<section id="sobre" class="py-5 text-center">
+  <div class="container">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos integrantes del equipo 11 de la Diplomatura de Desarrollo Web Full Stack</p>
+    <p>Creamos esta página para que todos puedan compartir sus superhéros favoritos con el mundo e interactuar con ellos</p>
+    <p>Somos fanáticos de los cómics y las películas de superhéroes.</p>
+  </div>
+</section>
+
+<section id="contacto" class="py-5" style="background-color: #f4f6f8;">
+  <div class="container text-center">
+    <h2>Contacto</h2>
+    <p>¿Querés saber más? ¡Escribinos! <br>
+      <img src="/img/email.png" class="icon"> <br>
+      nodo_cat@gmail.com
+    </p>
+
+    <div style="display: flex; justify-content: center; margin-top: 2rem;">
+      <a href="http://localhost:3000/heroes/contacto" class="btn-primary"> O envía tu consulta por acá</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
 
