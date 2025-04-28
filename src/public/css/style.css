@@ -48,7 +48,7 @@ h1::after {
   border-radius: 2px;
 }
 
-/* ==== Navbar Moderna ==== */
+/* ==== Navbar==== */
 nav.navbar {
   background: var(--dark);
   padding: 1rem 2rem;
@@ -81,7 +81,7 @@ nav.navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background: var(--dark);
 }
 
 nav.navbar ul li a {
@@ -163,7 +163,7 @@ nav.navbar ul li a:hover::after {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* ==== Botones Modernos ==== */
+/* ==== Botones ==== */
 .btn-primary {
   display: inline-block;
   margin-top: 2rem;
@@ -532,37 +532,6 @@ main {
 }
 
 /* ==== Responsive General ==== */
-
-/* Tablets grandes (≤ 992px) */
-@media (max-width: 992px) {
-  .hero-content h1 {
-    font-size: 3rem;
-  }
-  .heroes-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-
-/* Tablets pequeñas (≤ 768px) */
-@media (max-width: 768px) {
-  nav.navbar ul {
-    gap: 1rem;
-  }
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  .hero-content p,
-  section p {
-    font-size: 1.1rem;
-  }
-  section h2 {
-    font-size: 2rem;
-  }
-  .heroes-grid {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 1rem;
-  }
-}
 
 /* Celulares (≤ 600px) */
 @media (max-width: 600px) {
